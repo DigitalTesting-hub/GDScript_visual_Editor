@@ -1,0 +1,26 @@
+I want to make a visual coder to generate gd script using Scratch style block seqencers for godot 4.4
+Features to Include 
+1. Use official Godot API to fetch all the nodes in Godot, their, and how to use their feature through script: It should be in dropdown format when a user select any dropdown show them details about the node, its use and variables used
+A. on selecting node show a new panel that will show all its features and have input boxes to fill the variables and when a user fill the data and click generate code, give gd script code in valid format as supported bu godot only taking filled data and ignore blank inputs or use default values for no inputs 
+B. Only include those features which need modification through script and not those which can be directly set in inspector 
+C. For example: for AnimationPLayer show input for animation name, speed, direction and signals, when user press generate give data as animation_player.play(idle, -1, 4) for name, direction and speed 
+2. I need a sequence based code generation where we can sequence tabs like Key pressed, action to take, signal to connect or trigger, function to run when it finish which can be expanded or reduced as per requirement 
+A. Example: when Key W pressed, move character in Z- direction at 200speed , play walk animation
+B. Or start with signal from other node like when player enter car switch camera
+
+
+3. AI supported free Gemini API and Groq API i will provide the API keys use working models and endpoints to generate code with AI
+4. All scripts should be based on, valid, supported in current version, simple instead of declaring multiple variables and functions use simple supported working structure as much as possible
+5. All types of in-built functions Should have separate tab like, ready, input, process, physics process, inputevent for Mouse, Keyboard, touch 
+6. UI = create separate tabs, AI mode, Sequencer, Node Dropdown Godot API all 141 nodes from 9 categories, Signal, Multiplayer Rpc, Autoload generation, Templates 
+7. AI mode = Select AI bot Groq/Gemini, then bot model and then Run- on generation copy code, clear, edit 
+8. Sequencer = add, delete, rearrange, stack one after other which will describe the code sequence and generate code accordingly using AI + godot official supported formats 
+9. Node Dropdown: get all node from Godot using API and when someone select a node show it details from official doc in summary form and values which can be used, add a button code generator which will open input scene for that node and user can input value for example if label - text to show, color and size normal and outline and click generate it give code based on input values set in the inputs and have same option copy, edit and clear 
+10. Signals - have button signal, signal from a different script, area signals and others 
+12. Multiplayer and Rpc - Proper script generation for Multiplayer game and respective rpc for each function with option to select who call, who receive and method to use 
+13. Templates - this will have hardcoded data which can be used as templates with minimal change  - I will give you my scripts for Melee enemy, Gun Enemy, Car Driving, Pvp Gun and Melee Fight, Battle royal zone, Maps, lobby spawn, authentication, data saving, use that and save each function block as separate editable template where user can set bool to use, change values of changeable nodes and generate a new working code using that as template for example if gun enemy user can set raycast mask to use, player layer and mask, distance. For player damage to apply
+
+14. Separate tab for particle generation and find template from net and use them for fire, smoke, blood, grande blast, etc as more as possible
+15. Provide prebuilt full scripts from the scripts i have provided using inputs where user can insert his own value as per requirement 
+16. It should be fully visual, structured and well organised Visual GD script Generator with AI based code generation and templates 
+17. What other features can be added or improved
